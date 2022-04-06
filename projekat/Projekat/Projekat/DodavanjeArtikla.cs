@@ -192,5 +192,10 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void DodavanjeArtikla_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

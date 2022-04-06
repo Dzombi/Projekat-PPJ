@@ -275,6 +275,7 @@
             this.Controls.Add(this.textBoxTražiIme);
             this.Name = "KreiranjeKupca";
             this.Text = "Kreiranje / Ažuriranje novog kupca";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.KreiranjeKupca_FormClosed);
             this.Load += new System.EventHandler(this.KreiranjeKupca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

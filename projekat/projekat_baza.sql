@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : kazaz
+Source Server         : MySQL
 Source Server Version : 50018
 Source Host           : localhost:3306
-Source Database       : projekat
+Source Database       : projekat_baza
 
 Target Server Type    : MYSQL
 Target Server Version : 50018
 File Encoding         : 65001
 
-Date: 2022-04-06 00:50:00
+Date: 2022-04-06 17:15:16
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -55,7 +55,7 @@ PRIMARY KEY (`kupac_id`)
 )
 ENGINE=InnoDB
 DEFAULT CHARACTER SET=utf8 COLLATE=utf8_unicode_ci
-/*!50003 AUTO_INCREMENT=3 */
+/*!50003 AUTO_INCREMENT=4 */
 
 ;
 
@@ -63,7 +63,7 @@ DEFAULT CHARACTER SET=utf8 COLLATE=utf8_unicode_ci
 -- Records of kupac
 -- ----------------------------
 BEGIN;
-INSERT INTO `kupac` VALUES ('1', 'Admin', 'Ministrator', 'Sarajevo', 'Sarajevska 1', '0611111', 'Admin', '1234'), ('2', 'Amina', 'Kazazovic', 'Sarajevo', 'Doljani 52', '062241331', 'Kazaz', '5678');
+INSERT INTO `kupac` VALUES ('1', 'Admin', 'Ministrator', 'Sarajevo', 'Sarajevska 1', '0611111', 'Admin', '1234'), ('2', 'Amina', 'Kazazovic', 'Sarajevo', 'Doljani 52', '062241331', 'Kazaz', '5678'), ('3', 'Rasim', 'Rasimović', 'Banja  Luka', 'Banjalučka 17', '063666666', 'Rasko', '4321');
 COMMIT;
 
 -- ----------------------------
@@ -80,7 +80,7 @@ FOREIGN KEY (`kupac_id`) REFERENCES `kupac` (`kupac_id`) ON DELETE RESTRICT ON U
 ENGINE=InnoDB
 DEFAULT CHARACTER SET=utf8 COLLATE=utf8_unicode_ci
 COMMENT='InnoDB free: 3072 kB; (`kupac_id`) REFER `projekat/kupac`(`k'
-/*!50003 AUTO_INCREMENT=2 */
+/*!50003 AUTO_INCREMENT=20 */
 
 ;
 
@@ -88,6 +88,7 @@ COMMENT='InnoDB free: 3072 kB; (`kupac_id`) REFER `projekat/kupac`(`k'
 -- Records of narudzbenica
 -- ----------------------------
 BEGIN;
+INSERT INTO `narudzbenica` VALUES ('2', '2', '2022-04-06'), ('3', '2', '2022-04-06'), ('4', '2', '2022-04-06'), ('5', '2', '2022-04-06'), ('6', '2', '2022-04-06'), ('7', '2', '2022-04-06'), ('8', '2', '2022-04-06'), ('9', '2', '2022-04-06'), ('10', '2', '2022-04-06'), ('11', '2', '2022-04-06'), ('12', '2', '2022-04-06'), ('13', '2', '2022-04-06'), ('14', '2', '2022-04-06'), ('15', '2', '2022-04-06'), ('16', '2', '2022-04-06'), ('17', '2', '2022-04-06'), ('18', '3', '2022-04-06'), ('19', '2', '2022-04-06');
 COMMIT;
 
 -- ----------------------------
@@ -112,7 +113,7 @@ COMMENT='InnoDB free: 3072 kB; (`artikal_id`) REFER `projekat/artikal'
 -- Records of skladiste
 -- ----------------------------
 BEGIN;
-INSERT INTO `skladiste` VALUES ('1', '1', '10'), ('5', '14', '28'), ('6', '15', '10');
+INSERT INTO `skladiste` VALUES ('1', '1', '10'), ('5', '14', '10'), ('6', '15', '10');
 COMMIT;
 
 -- ----------------------------
@@ -131,7 +132,7 @@ FOREIGN KEY (`narudzbenica_id`) REFERENCES `narudzbenica` (`narudzbenica_id`) ON
 ENGINE=InnoDB
 DEFAULT CHARACTER SET=utf8 COLLATE=utf8_unicode_ci
 COMMENT='InnoDB free: 3072 kB; (`artikal_id`) REFER `projekat/artikal'
-/*!50003 AUTO_INCREMENT=2 */
+/*!50003 AUTO_INCREMENT=37 */
 
 ;
 
@@ -139,6 +140,7 @@ COMMENT='InnoDB free: 3072 kB; (`artikal_id`) REFER `projekat/artikal'
 -- Records of stavka_narudzbenice
 -- ----------------------------
 BEGIN;
+INSERT INTO `stavka_narudzbenice` VALUES ('2', '15', '15', '10'), ('3', '16', '14', '10'), ('4', '17', '15', '1'), ('5', '17', '1', '12');
 COMMIT;
 
 -- ----------------------------
@@ -149,7 +151,7 @@ ALTER TABLE `artikal` AUTO_INCREMENT=16;
 -- ----------------------------
 -- Auto increment value for `kupac`
 -- ----------------------------
-ALTER TABLE `kupac` AUTO_INCREMENT=3;
+ALTER TABLE `kupac` AUTO_INCREMENT=4;
 
 -- ----------------------------
 -- Indexes structure for table `narudzbenica`
@@ -159,7 +161,7 @@ CREATE INDEX `narudzbenica_kupac_id` USING BTREE ON `narudzbenica`(`kupac_id`);
 -- ----------------------------
 -- Auto increment value for `narudzbenica`
 -- ----------------------------
-ALTER TABLE `narudzbenica` AUTO_INCREMENT=2;
+ALTER TABLE `narudzbenica` AUTO_INCREMENT=20;
 
 -- ----------------------------
 -- Indexes structure for table `skladiste`
@@ -180,4 +182,4 @@ CREATE INDEX `stavka_narudzbenice_artikal_id` USING BTREE ON `stavka_narudzbenic
 -- ----------------------------
 -- Auto increment value for `stavka_narudzbenice`
 -- ----------------------------
-ALTER TABLE `stavka_narudzbenice` AUTO_INCREMENT=2;
+ALTER TABLE `stavka_narudzbenice` AUTO_INCREMENT=37;

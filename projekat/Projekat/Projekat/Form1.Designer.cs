@@ -70,6 +70,7 @@
             this.textBoxŠifra.Name = "textBoxŠifra";
             this.textBoxŠifra.Size = new System.Drawing.Size(100, 20);
             this.textBoxŠifra.TabIndex = 3;
+            this.textBoxŠifra.UseSystemPasswordChar = true;
             // 
             // buttonPrijava
             // 

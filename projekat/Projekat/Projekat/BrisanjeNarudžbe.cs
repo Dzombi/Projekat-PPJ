@@ -74,5 +74,10 @@ namespace WindowsFormsApplication1
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void BrisanjeNarudžbe_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

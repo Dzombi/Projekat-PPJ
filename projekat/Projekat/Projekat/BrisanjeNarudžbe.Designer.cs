@@ -80,6 +80,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "BrisanjeNarudžbe";
             this.Text = "Prikaz/Brisanje narudžbe";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BrisanjeNarudžbe_FormClosed);
             this.Load += new System.EventHandler(this.BrisanjeNarudžbe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -151,6 +151,11 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void KreiranjeKupca_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
 
 
 

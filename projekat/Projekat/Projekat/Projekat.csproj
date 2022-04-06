@@ -85,9 +85,6 @@
     <EmbeddedResource Include="BrisanjeNarudžbe.resx">
       <DependentUpon>BrisanjeNarudžbe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="KreiranjeKupca.resx">
       <DependentUpon>KreiranjeKupca.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KreiranjeNarudžbe.resx">
       <DependentUpon>KreiranjeNarudžbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

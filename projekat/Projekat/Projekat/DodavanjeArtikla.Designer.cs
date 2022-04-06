@@ -226,6 +226,7 @@
             this.Controls.Add(this.textBoxTražiŠifra);
             this.Name = "DodavanjeArtikla";
             this.Text = "Dodavanje / Ažuriranje artikla";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DodavanjeArtikla_FormClosed);
             this.Load += new System.EventHandler(this.KreiranjeNarudzbe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

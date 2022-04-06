@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,8 +43,10 @@
             this.textBoxTotal = new System.Windows.Forms.TextBox();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.textBoxKOL = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,6 +131,7 @@
             this.buttonObriši.TabIndex = 8;
             this.buttonObriši.Text = "Obriši";
             this.buttonObriši.UseVisualStyleBackColor = true;
+            this.buttonObriši.Click += new System.EventHandler(this.buttonObriši_Click);
             // 
             // dataGridView1
             // 
@@ -166,6 +170,10 @@
             this.textBoxKOL.Size = new System.Drawing.Size(47, 20);
             this.textBoxKOL.TabIndex = 13;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // KreiranjeNarudžbe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,9 +195,11 @@
             this.Controls.Add(this.label1);
             this.Name = "KreiranjeNarudžbe";
             this.Text = "Kreiranje Narudžbe";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.KreiranjeNarudžbe_FormClosed);
             this.Load += new System.EventHandler(this.KreiranjeNarudžbe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +221,6 @@
         private System.Windows.Forms.TextBox textBoxTotal;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.TextBox textBoxKOL;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
