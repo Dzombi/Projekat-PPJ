@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
 
         String konekcioniString = Form1.konekcioniString;
         String kupacID = Form1.kupacID;
-        String narudzba;
+        public static String narudzba;
 
         private void KreiranjeNarudžbe_Load(object sender, EventArgs e)
         {
@@ -248,6 +248,20 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void prikazNarudžbiIStavkiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrikazNarudžbi pn = new PrikazNarudžbi();
+            this.Hide();
+            pn.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            this.Hide();
+            f1.Show();
         }
 
 

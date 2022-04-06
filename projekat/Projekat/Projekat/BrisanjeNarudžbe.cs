@@ -79,5 +79,26 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void kreiranjeAžuriranjeNovogKupcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KreiranjeKupca kk = new KreiranjeKupca();
+            this.Hide();
+            kk.Show();
+        }
+
+        private void dodavanjeAžuriranjeArtikalaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DodavanjeArtikla da = new DodavanjeArtikla();
+            this.Hide();
+            da.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            this.Hide();
+            f1.Show();
+        }
     }
 }
