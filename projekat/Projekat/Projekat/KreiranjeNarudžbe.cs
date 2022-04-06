@@ -223,7 +223,6 @@ namespace WindowsFormsApplication1
 
         private void Total() 
         {
-            int i = 0;
             int ukupno=0;
             String query = "SELECT sn.kolicina,a.cijena FROM stavka_narudzbenice sn,artikal a, narudzbenica n WHERE n.narudzbenica_id=sn.narudzbenica_id AND sn.artikal_id=a.artikal_id AND sn.narudzbenica_id='"+narudzba+"' AND n.kupac_id='"+kupacID+"'  ";
             try
