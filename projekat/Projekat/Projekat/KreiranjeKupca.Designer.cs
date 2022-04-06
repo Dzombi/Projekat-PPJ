@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KreiranjeKupca));
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,112 +52,147 @@
             this.textBoxTražiIme = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodavanjeAžuriranjeArtiklaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.prikazBrisanjeNarudžbeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(225, 357);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(218, 379);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 13);
+            this.label8.Size = new System.Drawing.Size(63, 13);
             this.label8.TabIndex = 43;
             this.label8.Text = "ID kupca:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(304, 277);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(300, 295);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 42;
             this.label7.Text = "Šifra:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(257, 251);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(244, 269);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 13);
+            this.label6.Size = new System.Drawing.Size(93, 13);
             this.label6.TabIndex = 41;
             this.label6.Text = "Korisničko ime:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(289, 225);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(283, 243);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.Size = new System.Drawing.Size(54, 13);
             this.label5.TabIndex = 40;
             this.label5.Text = "Telefon:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 308);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(40, 326);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 39;
             this.label4.Text = "Adresa:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 277);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(50, 295);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 38;
             this.label3.Text = "Grad:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 251);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(36, 269);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 37;
             this.label2.Text = "Prezime:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 225);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(61, 243);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 36;
             this.label1.Text = "Ime:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonAžuriranje
             // 
-            this.buttonAžuriranje.Location = new System.Drawing.Point(341, 352);
+            this.buttonAžuriranje.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonAžuriranje.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAžuriranje.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonAžuriranje.ForeColor = System.Drawing.Color.White;
+            this.buttonAžuriranje.Location = new System.Drawing.Point(343, 370);
             this.buttonAžuriranje.Name = "buttonAžuriranje";
-            this.buttonAžuriranje.Size = new System.Drawing.Size(100, 23);
+            this.buttonAžuriranje.Size = new System.Drawing.Size(126, 31);
             this.buttonAžuriranje.TabIndex = 35;
             this.buttonAžuriranje.Text = "Ažuriranje kupca";
-            this.buttonAžuriranje.UseVisualStyleBackColor = true;
+            this.buttonAžuriranje.UseVisualStyleBackColor = false;
             this.buttonAžuriranje.Click += new System.EventHandler(this.buttonAžuriranje_Click);
             // 
             // buttonKreiranje
             // 
-            this.buttonKreiranje.Location = new System.Drawing.Point(341, 323);
+            this.buttonKreiranje.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonKreiranje.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonKreiranje.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonKreiranje.ForeColor = System.Drawing.Color.White;
+            this.buttonKreiranje.Location = new System.Drawing.Point(343, 336);
             this.buttonKreiranje.Name = "buttonKreiranje";
-            this.buttonKreiranje.Size = new System.Drawing.Size(100, 23);
+            this.buttonKreiranje.Size = new System.Drawing.Size(126, 28);
             this.buttonKreiranje.TabIndex = 34;
             this.buttonKreiranje.Text = "Kreiranje kupca";
-            this.buttonKreiranje.UseVisualStyleBackColor = true;
+            this.buttonKreiranje.UseVisualStyleBackColor = false;
             this.buttonKreiranje.Click += new System.EventHandler(this.buttonKreiranje_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(558, 153);
             this.dataGridView1.TabIndex = 32;
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(285, 354);
+            this.textBoxID.Location = new System.Drawing.Point(287, 375);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(50, 20);
             this.textBoxID.TabIndex = 31;
@@ -164,56 +200,56 @@
             // 
             // textBoxPass
             // 
-            this.textBoxPass.Location = new System.Drawing.Point(341, 274);
+            this.textBoxPass.Location = new System.Drawing.Point(343, 292);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.Size = new System.Drawing.Size(100, 20);
             this.textBoxPass.TabIndex = 30;
             // 
             // textBoxUser
             // 
-            this.textBoxUser.Location = new System.Drawing.Point(341, 248);
+            this.textBoxUser.Location = new System.Drawing.Point(343, 266);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(100, 20);
             this.textBoxUser.TabIndex = 29;
             // 
             // textBoxTelefon
             // 
-            this.textBoxTelefon.Location = new System.Drawing.Point(341, 222);
+            this.textBoxTelefon.Location = new System.Drawing.Point(343, 240);
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(100, 20);
             this.textBoxTelefon.TabIndex = 28;
             // 
             // textBoxAdresa
             // 
-            this.textBoxAdresa.Location = new System.Drawing.Point(92, 305);
+            this.textBoxAdresa.Location = new System.Drawing.Point(94, 323);
             this.textBoxAdresa.Name = "textBoxAdresa";
             this.textBoxAdresa.Size = new System.Drawing.Size(100, 20);
             this.textBoxAdresa.TabIndex = 27;
             // 
             // textBoxGrad
             // 
-            this.textBoxGrad.Location = new System.Drawing.Point(92, 274);
+            this.textBoxGrad.Location = new System.Drawing.Point(94, 292);
             this.textBoxGrad.Name = "textBoxGrad";
             this.textBoxGrad.Size = new System.Drawing.Size(100, 20);
             this.textBoxGrad.TabIndex = 26;
             // 
             // textBoxPrezime
             // 
-            this.textBoxPrezime.Location = new System.Drawing.Point(92, 248);
+            this.textBoxPrezime.Location = new System.Drawing.Point(94, 266);
             this.textBoxPrezime.Name = "textBoxPrezime";
             this.textBoxPrezime.Size = new System.Drawing.Size(100, 20);
             this.textBoxPrezime.TabIndex = 25;
             // 
             // textBoxIme
             // 
-            this.textBoxIme.Location = new System.Drawing.Point(92, 222);
+            this.textBoxIme.Location = new System.Drawing.Point(94, 240);
             this.textBoxIme.Name = "textBoxIme";
             this.textBoxIme.Size = new System.Drawing.Size(100, 20);
             this.textBoxIme.TabIndex = 24;
             // 
             // textBoxTražiPrezime
             // 
-            this.textBoxTražiPrezime.Location = new System.Drawing.Point(118, 27);
+            this.textBoxTražiPrezime.Location = new System.Drawing.Point(120, 45);
             this.textBoxTražiPrezime.Name = "textBoxTražiPrezime";
             this.textBoxTražiPrezime.Size = new System.Drawing.Size(100, 20);
             this.textBoxTražiPrezime.TabIndex = 23;
@@ -221,7 +257,7 @@
             // 
             // textBoxTražiIme
             // 
-            this.textBoxTražiIme.Location = new System.Drawing.Point(12, 27);
+            this.textBoxTražiIme.Location = new System.Drawing.Point(14, 45);
             this.textBoxTražiIme.Name = "textBoxTražiIme";
             this.textBoxTražiIme.Size = new System.Drawing.Size(100, 20);
             this.textBoxTražiIme.TabIndex = 22;
@@ -230,26 +266,75 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 11);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(14, 29);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 13);
+            this.label9.Size = new System.Drawing.Size(31, 13);
             this.label9.TabIndex = 44;
             this.label9.Text = "Ime:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(115, 11);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(117, 29);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 13);
+            this.label10.Size = new System.Drawing.Size(55, 13);
             this.label10.TabIndex = 45;
             this.label10.Text = "Prezime:";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(584, 24);
+            this.menuStrip1.TabIndex = 46;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dodavanjeAžuriranjeArtiklaToolStripMenuItem,
+            this.prikazBrisanjeNarudžbeToolStripMenuItem,
+            this.logoutToolStripMenuItem});
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(47, 20);
+            this.toolStripMenuItem1.Text = "Meni";
+            // 
+            // dodavanjeAžuriranjeArtiklaToolStripMenuItem
+            // 
+            this.dodavanjeAžuriranjeArtiklaToolStripMenuItem.Name = "dodavanjeAžuriranjeArtiklaToolStripMenuItem";
+            this.dodavanjeAžuriranjeArtiklaToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.dodavanjeAžuriranjeArtiklaToolStripMenuItem.Text = "Dodavanje / Ažuriranje artikla";
+            this.dodavanjeAžuriranjeArtiklaToolStripMenuItem.Click += new System.EventHandler(this.dodavanjeAžuriranjeArtiklaToolStripMenuItem_Click);
+            // 
+            // prikazBrisanjeNarudžbeToolStripMenuItem
+            // 
+            this.prikazBrisanjeNarudžbeToolStripMenuItem.Name = "prikazBrisanjeNarudžbeToolStripMenuItem";
+            this.prikazBrisanjeNarudžbeToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.prikazBrisanjeNarudžbeToolStripMenuItem.Text = "Prikaz / Brisanje narudžbe";
+            this.prikazBrisanjeNarudžbeToolStripMenuItem.Click += new System.EventHandler(this.prikazBrisanjeNarudžbeToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // KreiranjeKupca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 397);
+            this.BackColor = System.Drawing.Color.Teal;
+            this.ClientSize = new System.Drawing.Size(584, 425);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -273,11 +358,16 @@
             this.Controls.Add(this.textBoxIme);
             this.Controls.Add(this.textBoxTražiPrezime);
             this.Controls.Add(this.textBoxTražiIme);
+            this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "KreiranjeKupca";
             this.Text = "Kreiranje / Ažuriranje novog kupca";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.KreiranjeKupca_FormClosed);
             this.Load += new System.EventHandler(this.KreiranjeKupca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,5 +398,10 @@
         private System.Windows.Forms.TextBox textBoxTražiIme;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem dodavanjeAžuriranjeArtiklaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem prikazBrisanjeNarudžbeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

@@ -53,7 +53,7 @@ namespace WindowsFormsApplication1
                            MessageBox.Show("Uspješno ste se logovali Administratore " + imeprez);
                            KreiranjeKupca kr = new KreiranjeKupca();
                            this.Hide();
-                           kr.Show();
+                           kr.Show();                         
                        }
                        else
                        {

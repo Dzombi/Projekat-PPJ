@@ -42,23 +42,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(302, 130);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(287, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Korisničko ime:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(349, 170);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(343, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Šifra:";
             // 
             // textBoxIme
             // 
+            this.textBoxIme.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxIme.Location = new System.Drawing.Point(386, 127);
             this.textBoxIme.Name = "textBoxIme";
             this.textBoxIme.Size = new System.Drawing.Size(100, 20);
@@ -74,12 +77,16 @@
             // 
             // buttonPrijava
             // 
+            this.buttonPrijava.BackColor = System.Drawing.Color.Red;
+            this.buttonPrijava.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonPrijava.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonPrijava.ForeColor = System.Drawing.Color.White;
             this.buttonPrijava.Location = new System.Drawing.Point(386, 206);
             this.buttonPrijava.Name = "buttonPrijava";
-            this.buttonPrijava.Size = new System.Drawing.Size(100, 26);
+            this.buttonPrijava.Size = new System.Drawing.Size(100, 29);
             this.buttonPrijava.TabIndex = 4;
             this.buttonPrijava.Text = "Prijava";
-            this.buttonPrijava.UseVisualStyleBackColor = true;
+            this.buttonPrijava.UseVisualStyleBackColor = false;
             this.buttonPrijava.Click += new System.EventHandler(this.buttonPrijava_Click);
             // 
             // errorProvider1
@@ -99,6 +106,7 @@
             this.Controls.Add(this.textBoxIme);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);

@@ -21,3 +21,5 @@ C:\Users\SUSTAV\Desktop\projekat\Projekat\Projekat\obj\x86\Debug\WindowsFormsApp
 C:\Users\Bazdari\Desktop\projekat\Projekat\Projekat\obj\x86\Debug\WindowsFormsApplication1.BrisanjeNarudžbe.resources
 C:\Users\Bazdari\Desktop\projekat\Projekat\Projekat\obj\x86\Debug\WindowsFormsApplication1.DodavanjeArtikla.resources
 C:\Users\Bazdari\Desktop\projekat\Projekat\Projekat\obj\x86\Debug\WindowsFormsApplication1.KreiranjeNarudžbe.resources
+C:\Users\SUSTAV\Desktop\projekat\Projekat\Projekat\obj\x86\Debug\WindowsFormsApplication1.KreiranjeNarudžbe.resources
+C:\Users\SUSTAV\Desktop\projekat\Projekat\Projekat\obj\x86\Debug\WindowsFormsApplication1.PrikazNarudžbi.resources

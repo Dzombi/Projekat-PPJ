@@ -156,6 +156,51 @@ namespace WindowsFormsApplication1
             Application.Exit();
         }
 
+        private void dodavanjeAžuriranjeArtiklaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DodavanjeArtikla da = new DodavanjeArtikla();
+            this.Hide();
+            da.Show();
+        }
+
+        private void prikazBrisanjeNarudžbeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BrisanjeNarudžbe bn = new BrisanjeNarudžbe();
+            this.Hide();
+            bn.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            this.Hide();
+            f1.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
 
 
 
