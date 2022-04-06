@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
         }
        public static String kupacID;
        public static String konekcioniString = "Server=localhost; Port=3306; " +
-       "Database=projekat_baza; Uid=root; Pwd=1234";
+       "Database=projekat_bazapodataka; Uid=root; Pwd=1234";
 
        private void buttonPrijava_Click(object sender, EventArgs e)
        {
